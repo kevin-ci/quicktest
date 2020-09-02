@@ -1,1 +1,1 @@
-web: python mongo.py
+web: python app.py
