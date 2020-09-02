@@ -10,7 +10,7 @@ brs_user = os.environ.get('BRS_USER')
 brs_password = os.environ.get('BRS_PASSWORD')
 
 app.config["MONGODB_NAME"] = 'book_review_site'
-app.config["MONGO_URI"] = 'mongodb+srv://' + 'brs_user' + ':' + 'brs_password' + '@bookreviewcluster.k2d12.mongodb.net/book_review_site?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = 'mongodb+srv://brs_user:brs_password@bookreviewcluster.k2d12.mongodb.net/book_review_site?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 
