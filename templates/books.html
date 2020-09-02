@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        {% for book in books %}
+            {{book.title}}
+            {{book.author}}
+            {{book.description}}
+            {{book.published}}
+            {{books.related_works}}
+            {{books.rating}}
+            {{books.review}}
+        {% endfor %}
+    </body>
+</html>
