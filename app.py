@@ -13,23 +13,17 @@ app.config["MONGO_URI"] = 'mongodb+srv://brs_user:brs_password@bookreviewcluster
 
 mongo = PyMongo(app)
 
+@app.route('/')
+@app.route('/get_books')
+def get_books():
+    return render_template("books.html", books=mongo.db.books.find())
 
 
 
-
-
-
-#@app.route('/')
-#@app.route('/get_books')
-#def get_books():
-#    return render_template("books.html", books=mongo.db.books.find())
-
-
-
-#if __name__ == '__main__':
-#    app.run(host=os.environ.get('IP'),
-#        port=int(os.environ.get('PORT')),
-#        debug=True)
+if __name__ == '__main__':
+    app.run(host=os.environ.get('IP'),
+        port=int(os.environ.get('PORT')),
+        debug=True)
 
 
 
