@@ -1,3 +1,7 @@
-dnspython==1.16.0
-Flask==1.1.2
+Click==7.0
+dnspython==2.0.0
+Flask==1.0.4
 Flask-PyMongo==2.3.0
+itsdangerous==1.1.0
+pymongo==2.8.1
+Werkzeug==1.0.0
